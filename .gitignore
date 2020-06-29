@@ -1,0 +1,10 @@
+.idea/
+.DS_Store
+vendor/
+bin/
+web/node_modules
+webapp/node_modules
+webapp/dist
+web/build
+webapp/html/head.tmpl
+.elasticbeanstalk/
