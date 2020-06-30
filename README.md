@@ -2,9 +2,13 @@
 
 GOLANG | GIN | POSTGRES
 
-## Installation
+## Requirements
 
-You need to have Go installed on your system. For details visit [this link](https://golang.org/doc/install) and install the distribution for your system. You can also follow [this](https://www.linode.com/docs/development/go/install-go-on-ubuntu/) short article for a quick setup.
+You need to have **Go** and **PostgreSQL** installed and configured on your system.
+
+## Setup
+
+Clone the repository and follow the steps below:
 
 ## Configuration
 
@@ -12,11 +16,11 @@ The API uses PostgreSQL database and the configuration could be found in **confi
 
 Default Credentials:
 ```
-	port := "5432"
-	host := "localhost"
-	name := "floom"
-	user := "postgres"
-	password := "1245"
+port := "5432"
+host := "localhost"
+name := "floom"
+user := "postgres"
+password := "1245"
 ```
 
 ## Running the application
@@ -27,6 +31,7 @@ Execute the following commands after Go is installed and database is configured:
 ```
 $ go build
 ```
+You should now have a binary installed in the directory with the name 'Floom'.
 
 2. Start the application
 ```
