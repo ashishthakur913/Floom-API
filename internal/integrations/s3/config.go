@@ -1,10 +1,10 @@
 package s3
 
 const (
-	awsKey     = "AKIA2QXCPEH5HHUQIUUR"
-	awsSecret  = "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"
+	awsKey     = "AKIAJEZR3N6ZLEKRMKGA"
+	awsSecret  = "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"
 	awsRegion  = "us-east-2"
-	bucketName = "image-ebmivzjybw"
+	bucketName = "floom-web"
 	host       = "https://image-ebmivzjybw.s3.us-east-2.amazonaws.com"
 	folder     = "images"
 )

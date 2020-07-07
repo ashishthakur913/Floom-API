@@ -72,7 +72,7 @@ func (s *s3) UploadImage(file multipart.File, fileHeader *multipart.FileHeader) 
 	}
 	fmt.Printf("file uploaded to, %v\n", result.Location)
 
-	return fileNameToBeStored, nil
+	return result.Location, nil
 }
 
 func (s *s3) getEncodedFileName(fileName string) string {

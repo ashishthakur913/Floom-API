@@ -4,7 +4,6 @@ import (
 	"github.com/ashishthakur913/Floom/api/v1.0/flower"
 	"github.com/ashishthakur913/Floom/internal/handlers"
 	"github.com/ashishthakur913/Floom/internal/dto"
-	"github.com/ashishthakur913/Floom/internal/integrations/s3"
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"fmt"
@@ -50,7 +49,7 @@ func fileUpload(v1 *gin.RouterGroup, manager handlers.Manager) {
 		}
 
 		c.JSON(http.StatusOK, map[string]string{
-			"url": s3.GetImageURL(fileName),
+			"url": fileName,
 		})
 	})
 }
