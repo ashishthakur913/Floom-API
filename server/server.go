@@ -9,6 +9,7 @@ import (
 	"github.com/ashishthakur913/Floom/internal/integrations/s3"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
+	"path/filepath"
 )
 
 // To be called from application.go to initialize server with required dependencies
@@ -37,6 +38,7 @@ func Run() {
 	app.Use(limits.RequestSizeLimiter(2500000))
 
 	app.Use(cors.Default())
+	app.Static("/images", filepath.Base("../images"))
 
 	gin.SetMode(config.Server().Mode())
 

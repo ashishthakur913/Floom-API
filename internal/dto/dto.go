@@ -18,7 +18,7 @@ type GetFlowersResponse struct {
 }
 
 type PostFlowerRequest struct {
-	ImageURL    string 	`json:"image_url" binding:"required"`
+	ImageURL    string 	`json:"image_url"`
 	Name        string 	`json:"name" binding:"required"`
 	Price       string 	`json:"price" binding:"required"`
 	Rating 		string 	`json:"rating" binding:"required"`
